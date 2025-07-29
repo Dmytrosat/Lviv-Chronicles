@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Львівські Хроніки - Екскурсія містом Лева</title>
+    <!-- сss -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/scroll.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/tour.css" />
+    <link rel="stylesheet" href="./css/places.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/guide.css" />
+    <link rel="stylesheet" href="./css/booking.css" />
+    <link rel="stylesheet" href="./css/reviews.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>ЛЬВІВСЬКІ ХРОНІКИ</h1>
+                    <p>Екскурсія містом Лева</p>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#hero" class="active">Головна</a></li>
+                        <li><a href="#tour">Маршрут</a></li>
+                        <li><a href="#places">Місця</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#guide">Гід</a></li>
+                        <li><a href="#booking">Бронювання</a></li>
+                        <li><a href="#reviews">Відгуки</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="mobile-menu-nav">
+                <ul>
+                    <li><a href="#hero" class="active">Головна</a></li>
+                    <li><a href="#tour">Маршрут</a></li>
+                    <li><a href="#places">Місця</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#guide">Гід</a></li>
+                    <li><a href="#booking">Бронювання</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container cover">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Ексклюзивна екскурсія <br />
+                        2025</span>
+                </div>
+                <h2>Відкрийте для себе Львів <br />разом з нами</h2>
+                <p>
+                    Унікальна екскурсія містом Лева. <br />Історія, легенди та незабутні
+                    враження.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-text">Років досвіду</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-text">Задоволених клієнтів</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-text">Унікальних маршрутів</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#booking" class="cta-button">Забронювати екскурсію</a>
+                    <a href="#places" class="secondary-button">Детальніше про екскурсії</a>
+                </div>
+                <div class="scroll-indicator">
+                    <a href="#tour" class="scroll-link">
+                        <span class="scroll-text">Прокрутіть вниз</span>
+                        <div class="scroll-arrow">↓</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tour Section -->
+    <section id="tour">
+        <div class="container">
+            <h2>Наша екскурсія</h2>
+            <div class="tour-info">
+                <div class="tour-details">
+                    <h3>Що вас чекає?</h3>
+                    <ul>
+                        <li><i class="fas fa-clock"></i> Тривалість: 3 години</li>
+                        <li><i class="fas fa-walking"></i> Дистанція: 3 км пішки</li>
+                        <li><i class="fas fa-landmark"></i> 15+ історичних місць</li>
+                        <li><i class="fas fa-book"></i> Легенди та історії</li>
+                        <li><i class="fas fa-camera"></i> Фотозони</li>
+                        <li>
+                            <i class="fas fa-coffee"></i> Привал з кавою в старовинному
+                            закладі
+                        </li>
+                        <li><i class="fas fa-gift"></i> Пам'ятний сувенір учасникам</li>
+                    </ul>
+                    <div class="tour-highlights">
+                        <h3>Особливості екскурсії:</h3>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Екскурсія доступна
+                            українською, англійською та польською мовами
+                        </p>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Групові та індивідуальні тури
+                        </p>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Зустріч за бажанням у
+                            будь-якому районі Львова
+                        </p>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Професійний фотокореспондент
+                            супроводжує групу
+                        </p>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Аудіогід у бездротових
+                            навушниках
+                        </p>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Екскурсія підходить для
+                            відвідувачів з обмеженими можливостями
+                        </p>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Можливість замовити VIP-тур з
+                            приватним гідом
+                        </p>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Дитячі знижки до 30% для
+                            дітей від 6 до 12 років
+                        </p>
+                    </div>
+                </div>
+                <div class="tour-description">
+                    <p class="tour-description-highlight">
+                        Погрузіться в тисячолітню історію Львова разом з професійним
+                        гідом. Ми відкриємо вам секрети старовинних будинків, розповімо
+                        про легенди міста та проведемо через найцікавіші куточки Лева.
+                    </p>
+                    <p class="tour-description-highlight">
+                        Наша екскурсія - це не просто огляд пам'яток, а подорож у часі, де
+                        кожна вулиця, кожен будинок має свою історію та таємницю.
+                    </p>
+                    <div class="tour-includes">
+                        <h3>Вартість включає:</h3>
+                        <ul>
+                            <li>Супровід ліцензованого гіда</li>
+                            <li>Аудіогід (за потреби)</li>
+                            <li>Кавовий привал</li>
+                            <li>Фотосесія на професійному обладнанні</li>
+                            <li>Пам'ятний сувенір</li>
+                        </ul>
+                    </div>
+                    <div class="tour-additional-info">
+                        <h3>Додаткова інформація:</h3>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Рекомендуємо зручне взуття
+                        </p>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Екскурсія проходить в
+                            будь-яку погоду
+                        </p>
+                        <p>
+                            <i class="fas fa-info-circle"></i> Можлива організація
+                            індивідуальних та корпоративних турів
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Places Section -->
+    <section id="places">
+        <div class="container cover">
+            <h2>Історичні місця маршруту</h2>
+            <div class="places-grid">
+                <div class="place-card">
+                    <div class="place-image">
+                        <img src="./images/places/place-1.png" alt="Львівська Ратуша" />
+                    </div>
+                    <h3>Львівська Ратуша</h3>
+                    <p>
+                        Головний символ міста з 14-го століття. Ратуша, яка бачила багато
+                        історичних подій.
+                    </p>
+                </div>
+                <div class="place-card">
+                    <div class="place-image">
+                        <img src="./images/places/place-2.png" alt="Площа Ринок" />
+                    </div>
+                    <h3>Площа Ринок</h3>
+                    <p>Серце стародавнього Львова, оточена архітектурними шедеврами.</p>
+                </div>
+                <div class="place-card">
+                    <div class="place-image">
+                        <img src="./images/places/place-3.png" alt="Домініканський собор" />
+                    </div>
+                    <h3>Домініканський собор</h3>
+                    <p>Готичний шедевр 13-го століття з унікальним інтер'єром.</p>
+                </div>
+                <div class="place-card">
+                    <div class="place-image">
+                        <img src="./images/places/place-4.png" alt="Вірменська церква" />
+                    </div>
+                    <h3>Вірменська церква</h3>
+                    <p>
+                        Унікальна церква 14-го століття з оригінальною архітектурою та
+                        розписами.
+                    </p>
+                </div>
+                <div class="place-card">
+                    <div class="place-image">
+                        <img src="./images/places/place-5.png" alt="Львівський оперний театр" />
+                    </div>
+                    <h3>Львівський оперний театр</h3>
+                    <p>
+                        Величний театр з багатою історією, один із найкрасивіших театрів
+                        Європи.
+                    </p>
+                </div>
+                <div class="place-card">
+                    <div class="place-image">
+                        <img src="./images/places/place-6.png" alt="Кафедральний собор" />
+                    </div>
+                    <h3>Кафедральний собор</h3>
+                    <p>
+                        Головний православний храм Львова з багатою історією та прекрасним
+                        інтер'єром.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Фотогалерея екскурсій</h2>
+            <div class="gallery-description">
+                <p>
+                    Погляньте, які незабутні враження чекають на вас під час нашої
+                    екскурсії містом Лева
+                </p>
+            </div>
+            <div class="gallery-wrapper">
+                <!-- Основне зображення -->
+                <div class="main-image-container">
+                    <img id="main-gallery-image" src="./images/gallery/gallery-1.png" alt="Палац Потоцьких" />
+                    <div class="image-counter">
+                        <span id="current">1</span> / <span id="total">12</span>
+                    </div>
+                </div>
+                <!-- Сітка мініатюр -->
+                <div class="thumbnails-grid">
+                    <div class="thumbnail active" data-index="0" data-src="./images/gallery/gallery-1.png"
+                        data-alt="Палац Потоцьких">
+                        <img src="./images/gallery/gallery-1.png" alt="Палац Потоцьких" />
+                    </div>
+                    <div class="thumbnail" data-index="1" data-src="./images/gallery/gallery-2.png"
+                        data-alt="Високий замок">
+                        <img src="./images/gallery/gallery-2.png" alt="Високий замок" />
+                    </div>
+                    <div class="thumbnail" data-index="2" data-src="./images/gallery/gallery-3.png"
+                        data-alt="Стрийський парк">
+                        <img src="./images/gallery/gallery-3.png" alt="Стрийський парк" />
+                    </div>
+                    <div class="thumbnail" data-index="3" data-src="./images/gallery/gallery-4.png"
+                        data-alt="Італійський дворик">
+                        <img src="./images/gallery/gallery-4.png" alt="Італійський дворик" />
+                    </div>
+                    <div class="thumbnail" data-index="4" data-src="./images/gallery/gallery-5.png"
+                        data-alt="Вірменський кафедральний собор">
+                        <img src="./images/gallery/gallery-5.png" alt="Вірменський кафедральний собор" />
+                    </div>
+                    <div class="thumbnail" data-index="5" data-src="./images/gallery/gallery-6.png"
+                        data-alt="Шевченківський гай">
+                        <img src="./images/gallery/gallery-6.png" alt="Шевченківський гай" />
+                    </div>
+                    <div class="thumbnail" data-index="6" data-src="./images/gallery/gallery-7.png"
+                        data-alt="Домініканський собор">
+                        <img src="./images/gallery/gallery-7.png" alt="Домініканський собор" />
+                    </div>
+                    <div class="thumbnail" data-index="7" data-src="./images/gallery/gallery-8.png"
+                        data-alt="Наукова бібліотека Львівського національного університету імені Івана Франка">
+                        <img src="./images/gallery/gallery-8.png"
+                            alt="Наукова бібліотека Львівського національного університету імені Івана Франка" />
+                    </div>
+                    <div class="thumbnail" data-index="8" data-src="./images/gallery/gallery-9.png"
+                        data-alt="Церква святих Ольги і Єлизавети">
+                        <img src="./images/gallery/gallery-9.png" alt="Церква святих Ольги і Єлизавети" />
+                    </div>
+                    <div class="thumbnail" data-index="9" data-src="./images/gallery/gallery-10.png"
+                        data-alt="Будинок вчених">
+                        <img src="./images/gallery/gallery-10.png" alt="Будинок вчених" />
+                    </div>
+                    <div class="thumbnail" data-index="10" data-src="./images/gallery/gallery-11.png"
+                        data-alt="Бутик-готель Замок Лева">
+                        <img src="./images/gallery/gallery-11.png" alt="Бутик-готель Замок Лева" />
+                    </div>
+                    <div class="thumbnail" data-index="11" data-src="./images/gallery/gallery-12.png"
+                        data-alt="каплиця Боїмів">
+                        <img src="./images/gallery/gallery-12.png" alt="каплиця Боїмів" />
+                    </div>
+                </div>
+                <!-- Навігаційні кнопки -->
+                <div class="gallery-nav">
+                    <button class="nav-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-arrow-left"></i> Попереднє
+                    </button>
+                    <button class="nav-btn next-btn" id="nextBtn">
+                        Наступне <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Section -->
+    <section id="guide">
+        <div class="container">
+            <h2>Ваш гід</h2>
+            <div class="guide-profile cover">
+                <div class="guide-image">
+                    <img src="./images/guade/guade.png" alt="Гід" />
+                </div>
+                <div class="guide-info">
+                    <h3>Марія Коваленко</h3>
+                    <p class="guide-title">Ліцензований гід-мовник</p>
+                    <p>Кандидат історичних наук, 15 років досвіду.</p>
+                    <p>Автор книг про таємниці Львова.</p>
+                    <p>Володіє 5 мовами.</p>
+                    <div class="guide-skills">
+                        <h4>Спеціалізація:</h4>
+                        <ul>
+                            <li>Історія Львова та Галичини</li>
+                            <li>Архітектурні екскурсії</li>
+                            <li>Легенди та таємниці міста</li>
+                            <li>Єврейська спадщина Львова</li>
+                            <li>Літературні маршрути</li>
+                        </ul>
+                    </div>
+                    <div class="languages">
+                        <span><i class="fas fa-language"></i> Українська</span>
+                        <span><i class="fas fa-language"></i> English</span>
+                        <span><i class="fas fa-language"></i> Polski</span>
+                        <span><i class="fas fa-language"></i> Deutsch</span>
+                        <span><i class="fas fa-language"></i> Français</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Section -->
+    <section id="booking">
+        <div class="container">
+            <h2>Забронювати екскурсію</h2>
+            <div class="booking-form">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я *</label>
+                            <input type="text" id="name" required placeholder="Введіть ваше ім'я" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required placeholder="Ваш email" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" placeholder="+380 __ ___ __ __" />
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Дата екскурсії *</label>
+                            <input type="date" id="date" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="people">Кількість осіб *</label>
+                            <select id="people" required>
+                                <option value>Оберіть кількість</option>
+                                <option value="1">1 особа</option>
+                                <option value="2">2 особи</option>
+                                <option value="3">3 особи</option>
+                                <option value="4">4 особи</option>
+                                <option value="5">5+ осіб</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Мова екскурсії</label>
+                            <select id="language">
+                                <option value="ukrainian">Українська</option>
+                                <option value="english">English</option>
+                                <option value="polish">Polski</option>
+                                <option value="german">Deutsch</option>
+                                <option value="french">Français</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" rows="4" placeholder="Додаткові побажання або запитання"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button-booking">
+                        Підтвердити бронювання
+                    </button>
+                </form>
+                <div class="price-info">
+                    <h3>Вартість екскурсії</h3>
+                    <div class="price-item">
+                        <span>👤 1 особа:</span>
+                        <span>350 грн</span>
+                    </div>
+                    <div class="price-item">
+                        <span>👥 2-3 особи:</span>
+                        <span>320 грн/особа</span>
+                    </div>
+                    <div class="price-item">
+                        <span>👥 Група (4+):</span>
+                        <span>300 грн/особа</span>
+                    </div>
+                    <div class="price-item-extra">
+                        <span><i class="fas fa-plus-circle"></i> VIP-тур (приватний
+                            гід):</span>
+                        <span>+200 грн/особа</span>
+                    </div>
+                    <div class="price-item-extra">
+                        <span><i class="fas fa-plus-circle"></i> Аудіогід:</span>
+                        <span>+50 грн/особа</span>
+                    </div>
+                    <div class="price-bonus">
+                        <i class="fas fa-camera"></i> Фотосесія в подарунок!
+                    </div>
+                    <div class="price-note">
+                        <i class="fas fa-info-circle"></i> Дитячі знижки до 30% для дітей
+                        6-12 років
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <div class="container ">
+            <h2>Відгуки учасників</h2>
+            <div class="reviews-container cover">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "Неймовірна екскурсія! Марія розповіла стільки цікавого, чого ніде
+                        більше не почуєш!"
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <img src="./images/reviews/reviews-1.png" alt="Наталя" />
+                        </div>
+                        <div class="reviewer-info">
+                            <span class="name">Наталя</span>
+                            <span class="location">Париж</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "Прекрасний гід і незабутні враження. Львів відкрився з абсолютно
+                        нового боку!"
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <img src="./images/reviews/reviews-2.png" alt="Петро" />
+                        </div>
+                        <div class="reviewer-info">
+                            <span class="name">Петро</span>
+                            <span class="location">Варшава</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "Найкраща екскурсія у Львові! Рекомендую всім, хто хоче дізнатися
+                        справжню історію міста."
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <img src="./images/reviews/reviews-3.png" alt="Оля" />
+                        </div>
+                        <div class="reviewer-info">
+                            <span class="name">Оля</span>
+                            <span class="location">Лондон</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Контакти</h2>
+            <div class="contacts">
+                <!-- Ліва частина: інформація -->
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <!-- Телефон -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Телефон</h4>
+                                <p>
+                                    <a href="tel:+380971234567" class="contact-link">+380 97 123 45 67</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>
+                                    <a href="mailto:info@lviv-chronicles.com"
+                                        class="contact-link">info@lviv-chronicles.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Адреса -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Адреса</h4>
+                                <p>м. Львів, площа Ринок, 1</p>
+                            </div>
+                        </div>
+
+                        <!-- Графік роботи -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Графік роботи</h4>
+                                <p>Пн–Пт: 9:00–18:00<br />Сб–Нд: 10:00–16:00</p>
+                            </div>
+                        </div>
+
+                        <!-- Посилання на бронювання -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-ticket-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Бронювання</h4>
+                                <p>
+                                    <a href="#booking" class="contact-link">Забронювати екскурсію</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Соцмережі -->
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+
+                        <!-- Кнопка зв'язку -->
+                        <div>
+                            <button class="contact-button">Зв'язатися</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Права частина: карта -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=24.0287,49.839,24.0327,49.841&amp;layer=mapnik&amp;marker=49.84007,24.0307"
+                        width="100%" height="450" frameborder="0" scrolling="no" style="
+                border: 0;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+              " allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <p class="map-credit">
+                        <small>
+                            <a href="https://www.openstreetmap.org/?mlat=49.84007&amp;mlon=24.0307#map=17/49.84007/24.0307"
+                                target="_blank">
+                                Переглянути більшу карту
+                            </a>
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>ЛЬВІВСЬКІ ХРОНІКИ</h3>
+                    <p>Екскурсія містом Лева</p>
+                </div>
+
+                <div class="footer-links-wrapper">
+                    <div class="footer-links">
+                        <a href="#hero" class="active">Головна</a>
+                        <a href="#tour">Маршрут</a>
+                        <a href="#places">Місця</a>
+                        <a href="#gallery">Галерея</a>
+                        <a href="#guide">Гід</a>
+                        <a href="#booking">Бронювання</a>
+                        <a href="#reviews">Відгуки</a>
+                        <a href="#contact">Контакти</a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <p>
+                        <strong>Телефон:</strong>
+                        <a href="tel:+380981234567" class="footer-contact-link">+38 (098) 123 45 67</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:info@lvivchronicles.com" class="footer-contact-link">info@lvivchronicles.com</a>
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Львівські Хроніки. Всі права захищені.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Політика конфіденційності</a>
+                    <a href="#terms">Угода користувача</a>
+                    <a href="#license">Ліцензія №12345</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- scroll -->
+    <button id="scrollToTopBtn" title="Повернутися догори">▲</button>
+    <!-- Booking Popup -->
+    <div id="bookingPopup" class="popup-overlay">
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3>Бронювання екскурсії</h3>
+                <span class="popup-close">&times;</span>
+            </div>
+            <div class="popup-content">
+                <div class="booking-success">
+                    <div class="success-icon">✓</div>
+                    <h4>Вітаємо!</h4>
+                    <p class="success-message">Ваша екскурсія успішно заброньована!</p>
+                    <div class="booking-details">
+                        <p><strong>Ім'я:</strong> <span id="popupName"></span></p>
+                        <p><strong>Дата:</strong> <span id="popupDate"></span></p>
+                        <p>
+                            <strong>Кількість осіб:</strong> <span id="popupPeople"></span>
+                        </p>
+                    </div>
+                    <p class="confirmation-text">
+                        Ми зв'яжемося з вами найближчим часом для підтвердження
+                        бронювання.
+                    </p>
+                    <button class="popup-button">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальне вікно (modal) -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Зв'язатися з нами</h3>
+            <p>
+                Будь ласка, заповніть форму, і ми зв'яжемося з вами найближчим часом.
+            </p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Надіслати</button>
+            </form>
+        </div>
+    </div>
+    <!-- Мобільне меню (обов'язково тут!) -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="mobile-menu-nav">
+                <ul>
+                    <li><a href="#hero">Головна</a></li>
+                    <li><a href="#tour">Маршрут</a></li>
+                    <li><a href="#places">Місця</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#guide">Гід</a></li>
+                    <li><a href="#booking">Бронювання</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll-top.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</body>
+
+</html>

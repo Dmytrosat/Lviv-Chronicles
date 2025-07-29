@@ -1,0 +1,23 @@
+/* --- scroll --- */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 1.25rem;   
+    right: 1.875rem;    
+    z-index: 99;
+    font-size: 1.125rem;    
+    border: none;
+    outline: none;
+    background-color: #ffd700;
+    color: #000000;
+    cursor: pointer;
+    padding: 0.9375rem;    
+    border-radius: 0.25rem;   
+    width: 3.125rem;   
+    height: 3.125rem;    
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0a5e2e;
+    color: #ffffff;
+}

@@ -1,0 +1,119 @@
+/* Загальні стилі */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif, serif, monospace;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+}
+
+.cover {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+}
+
+/* Заголовки */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.9375rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1.875rem;
+}
+h3 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+/* Посилання */
+a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #033519;
+}
+
+/* Кнопки */
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+/* Списки */
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Усунення "стрибків" при hover на кнопках */
+button,
+input[type="submit"],
+.submit-button {
+    border: none;
+    outline: none;
+}
+
+/* Адаптивний відступ для секцій */
+section {
+    padding: 3.125rem 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 0;
+    }
+}

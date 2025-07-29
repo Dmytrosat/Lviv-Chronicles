@@ -1,0 +1,170 @@
+/* --- Places Section --- */
+#places {
+    background-image: url('../images/places/places-bg.png');
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 3.125rem 0;
+    box-sizing: border-box;
+}
+
+#places .container {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#places h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.875rem;
+    font-size: 2.5rem;
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.place-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1.0rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-height: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.place-card:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.15);
+}
+
+.place-image {
+    overflow: hidden;
+    height: 15rem;
+}
+
+.place-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1rem;
+    transition: transform 0.4s ease;
+}
+
+.place-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.place-card h3 {
+    padding: 1.25rem 1.25rem 0.625rem;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+
+.place-card p {
+    padding: 0 1.25rem 1.25rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+
+/* --- Адаптивність --- */
+
+/* Планшети (до 1024px) */
+@media (max-width: 64em) {
+
+    /* 1024px */
+    #places h2 {
+        font-size: 2.2rem;
+    }
+
+    .places-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .place-card {
+        max-height: none;
+    }
+}
+
+/* Мобільні пристрої (до 768px) */
+@media (max-width: 48em) {
+
+    /* 768px */
+    #places {
+        padding: 2rem 0;
+    }
+
+    #places h2 {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0 1rem;
+    }
+
+    .places-grid {
+        grid-template-columns: 1fr;
+        /* Всі карти в один стовпчик */
+        gap: 1rem;
+    }
+
+    .place-card {
+        max-height: none;
+        border-radius: 0.8rem;
+    }
+
+    .place-image {
+        height: 12rem;
+    }
+
+    .place-card h3 {
+        font-size: 1.2rem;
+        padding: 1rem 1rem 0.5rem;
+    }
+
+    .place-card p {
+        padding: 0 1rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Дуже малі екрани (наприклад, смартфони до 480px) */
+@media (max-width: 30em) {
+
+    /* 480px */
+    #places h2 {
+        font-size: 1.8rem;
+    }
+
+    .place-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .place-card p {
+        font-size: 0.85rem;
+    }
+
+    .place-image {
+        height: 10rem;
+    }
+}

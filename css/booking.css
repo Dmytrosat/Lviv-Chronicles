@@ -1,0 +1,292 @@
+/* --- Booking Section --- */
+#booking {
+    background-color: #d4e7d4;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 3.125rem 0;
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+#booking h2 {
+    font-size: 2.5rem;
+    color: #0a5e2e;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+form {
+    background: #ffffff;
+    padding: 1.875rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem 0.9375rem;
+    border: 0.125rem solid #ddd;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0a5e2e;
+    outline: none;
+    box-shadow: 0 0 0 0.1875rem rgba(142, 68, 173, 0.1);
+}
+
+.submit-button-booking {
+    background: #0a5e2e;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0.3125rem 0.3125rem rgba(3, 27, 1, 0.493);
+    border: none;
+}
+
+.submit-button-booking:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.5rem 0.5rem rgba(3, 27, 1, 0.6);
+}
+
+.submit-button-booking:active {
+    background: #ffffff ;
+    color: #000000 ;
+    transform: translateY(0);
+    box-shadow: 0 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3);
+}
+
+.price-info {
+    background: #ffffff;
+    padding: 1.875rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
+}
+
+.price-info h3 {
+    color: #333;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.2);
+}
+
+.price-item:last-child {
+    border-bottom: none;
+}
+
+.price-bonus {
+    margin-top: 1.25rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.price-item-extra {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 0.0625rem dotted rgba(10, 94, 46, 0.2);
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.price-item-extra:last-child {
+    border-bottom: none;
+}
+
+.price-item-extra i {
+    color: #0a5e2e;
+    font-size: 0.9rem;
+}
+
+.price-note {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    padding: 0.5rem;
+    background-color: #f8fff9;
+    border-radius: 0.25rem;
+    border-left: 0.1875rem solid #0a5e2e;
+    margin-top: 1rem;
+}
+
+.price-note i {
+    color: #0a5e2e;
+    margin-right: 0.3125rem;
+}
+
+/* --- Адаптивність --- */
+
+/* Планшети (до 992px) */
+@media (max-width: 992px) {
+    #booking h2 {
+        font-size: 2.2rem;
+    }
+
+    .booking-form {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    form,
+    .price-info {
+        padding: 1.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Мобільні пристрої (до 768px) */
+@media (max-width: 768px) {
+    #booking {
+        padding: 2rem 0;
+    }
+
+    #booking h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .booking-form {
+        padding: 0 1rem;
+    }
+
+    form,
+    .price-info {
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 0.65rem 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .price-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .price-bonus {
+        font-size: 1rem;
+        gap: 0.5rem;
+    }
+
+    .price-note {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+}
+
+/* Дуже малі екрани (до 480px) */
+@media (max-width: 480px) {
+    #booking h2 {
+        font-size: 1.8rem;
+    }
+
+    form,
+    .price-info {
+        padding: 1rem;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.7rem;
+    }
+
+    .price-bonus {
+        font-size: 0.95rem;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .price-note {
+        font-size: 0.75rem;
+        padding: 0.3rem;
+    }
+}
