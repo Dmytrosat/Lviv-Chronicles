@@ -133,6 +133,7 @@ input[type="submit"],
 
 }
 
+
 .fa-phone,
 .fa-envelope,
 .fa-location-dot,
@@ -149,6 +150,15 @@ input[type="submit"],
     font-size: 1.2rem;
     vertical-align: center;
     text-align: center;
+}
+
+.fa-arrow-right,
+.fa-arrow-left {
+    color: #000000;
+    font-size: 1.2rem;
+    vertical-align: center;
+    text-align: center;
+    margin: 0 1.5rem;
 }
 
 /* Адаптивний відступ для секцій */

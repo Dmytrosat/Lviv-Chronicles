@@ -126,7 +126,7 @@
 }
 
 .nav-btn {
-    background: #0a5e2e;
+    background: #ffd700;
     color: #ffffff;
     padding: 1.5rem 2rem;
     font-size: 1.1rem;
@@ -152,6 +152,16 @@
 }
 
 .prev-btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.next-btn {
+    background: #ffd700;
+    color: #000000;
+}
+
+.next-btn:hover {
     background: #ffffff;
     color: #000000;
 }
